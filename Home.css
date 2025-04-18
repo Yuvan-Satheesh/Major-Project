@@ -2,7 +2,7 @@
 /* Global Styles */
 :root {
     --primary: #005baa;
-    --secondary: #e67e22;
+    --secondary: #bf0000;
     --accent: #2ecc71;
     --light: #f9f9f9;
     --dark: #333;
@@ -60,7 +60,7 @@ body {
 .logo-text {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary);
+    color: rgb(160, 6, 6)
 }
 
 .nav-links {

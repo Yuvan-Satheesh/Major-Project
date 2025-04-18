@@ -6,6 +6,7 @@
     <title>Feedback</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="Feedback.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
 </head>
 <body>
     <!--  Navigation Bar -->
@@ -19,9 +20,71 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Progress</a></li>
             <li><a href="#">Maps</a></li>
-            <li><a href="#">Feedback</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="Contact.html">Contact</a></li>
             <li><a href="Login.html">Login</a></li>
         </ul>
     </nav>
     <!-- Testimonials Section -->
+    <div class="section__container">
+        <div class="header">
+          <p>TESTIMONIALS</p>
+          <h1>What past teachers have said about us.</h1>
+        </div>
+        <div class="testimonials__grid">
+          <div class="card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <p>
+                I was new to the school and the induction program helped me a lot to
+                understand the policies and procedures.
+            </p>
+            <hr />
+            <img src="Teacher 1.avif" alt="user" />
+            <p class="name">Mr Kumar</p>
+          </div>
+          <div class="card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <p>
+                The induction program was a lifesaver! I felt as if I was part of the MFHS culture after just a few days.
+            </p>
+            <hr />
+            <img src="Teache 2.jpg" alt="user" />
+            <p class="name">Ms Chilla</p>
+          </div>
+          <div class="card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <p>
+                The resources provided were very helpful. I felt supported and
+                welcomed from day one.
+            </p>
+            <hr />
+            <img src="Teacher 3.jpg" alt="user" />
+            <p class="name">Mr Singh</p>
+          </div>
+        </div>
+
+        <!-- Feedback Form -->
+        <section class="feedback-form">
+            <h2>Share Your Feedback</h2>
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email (optional)</label>
+                    <input type="email" id="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="comments">Your Feedback</label>
+                    <textarea id="comments" required placeholder="What did you find most helpful? How can we improve?"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+        </section>
+
+   
+        <script src="Feedback.js"></script>
