@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Induction Course</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Induction Course.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="MFHS logo.jpg" alt="MFHS Logo">
+            <span class="logo-text">MFHS Induction</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#">Induction course</a></li>
+            <li><a href="#">Progress</a></li>
+            <li><a href="About .html">About</a></li>
+            <li><a href="#">Maps</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+  <body>
+   <section class="hero">
+        <div class="hero-content">
+            <h1>Teacher Induction Program</h1>
+            <p>Comprehensive training to prepare you for success at Macquarie Fields High School</p>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section class="modules-section" id="modules-section">
+        <div class="section-header">
+            <h2>Induction Modules</h2>
+            <p>Complete these modules to familiarise yourself with our school's policies, culture, and procedures</p>
+        </div>
+        <div class="modules-grid">
+            <!-- School Culture Module Card -->
+            <div class="module-card fade-in" onclick="openModule('school-culture')">
+                <div class="module-image" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="module-content">
+                    <div class="module-status" id="culture-status"></div>
+                    <h3>School Culture</h3>
+                    <p>Understand our mission, values, and community expectations</p>
+                    <ul class="module-features">
+                        <li>School mission and vision</li>
+                        <li>Core values and principles</li>
+                        <li>Diversity and inclusion</li>
+                        <li>5 essential questions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Policies Module Card -->
+            <div class="module-card fade-in" onclick="openModule('policies')">
+                <div class="module-image" style="background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="module-content">
+                    <div class="module-status" id="policies-status"></div>
+                    <h3>Policies & Procedures</h3>
+                    <p>Essential school policies every teacher must know</p>
+                    <ul class="module-features">
+                        <li>Behavior management</li>
+                        <li>Child protection</li>
+                        <li>Attendance policies</li>
+                        <li>6 critical questions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Teaching Module Card -->
+            <div class="module-card fade-in" onclick="openModule('teaching')">
+                <div class="module-image" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="module-content">
+                    <div class="module-status" id="teaching-status"></div>
+                    <h3>Teaching & Learning</h3>
+                    <p>Our approach to curriculum and pedagogy</p>
+                    <ul class="module-features">
+                        <li>Curriculum frameworks</li>
+                        <li>Assessment strategies</li>
+                        <li>Differentiated instruction</li>
+                        <li>5 key questions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Container (hidden by default) -->
+    <div class="quiz-container" id="quiz-container">
+        <div class="quiz-header">
+            <h1 id="module-title">Module Quiz</h1>
+            <p id="module-description">Test your knowledge of this module</p>
+        </div>
+        
+        <div class="question-container">
+            <span class="question-number" id="question-number">Question 1/5</span>
+            <h2 class="question-text" id="question-text"></h2>
+            <div class="options-grid" id="options-grid"></div>
+        </div>
+        
+        <div class="quiz-navigation">
+            <button class="nav-btn prev-btn" id="prev-btn">Previous</button>
+            <button class="nav-btn next-btn" id="next-btn" disabled>Next Question</button>
+        </div>
+        
+        <a href="#" class="back-to-modules">← Back to Modules</a>
+    </div>
+
+    <!-- Results Section (hidden by default) -->
+    <div class="results-container" id="results-container">
+        <div class="results-header">
+            <h2>Quiz Results</h2>
+            <div class="score-display">You scored <span id="score-display">0</span> out of <span id="total-questions">0</span></div>
+            <div class="score-percentage" id="score-percentage">0%</div>
+            <p id="result-feedback">Well done! You've completed this module.</p>
+        </div>
+        <button class="retake-btn" id="retake-btn">Retake Quiz</button>
+        <a href="#" class="back-to-modules">← Back to Modules</a>
+    </div>
+
+  
+    <script src="Induction course.js"></script>
+</body>
+</html>
