@@ -3,30 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="Login.css">
-</head>
+    <title>DET NSW Login</title>
+        <link href='Login.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
 <body>
-    <div class="glass-container">
-        <div class="login-box">
-            <h2>Login</h2>
-            <form action="#" method="POST">
-
-                <input type="text" id="username" name="username" required placeholder="Username">
-                
-                <input type="password" id="password" name="password" required placeholder="Password">
-                
-                <div class="options">
-                    <input type="checkbox" id="remember" name="remember">
-                    <label for="remember">Remember me</label>
-                    <a href="#">Forgot Password?</a>
+    <div class="login-wrapper">
+        <div class="form-box">
+            <div class="login-container" id="login">
+                <div class="top">
+                    <span>Don't have an account? <a href="#" onclick="showRegister()">Sign Up</a></span>
+                    <header>DET NSW Login</header>
                 </div>
-                
-                <button type="submit">Login</button>
+                <form id="loginForm">
+                    <div class="input-box">
+                        <input type="email" class="input-field" id="loginEmail" placeholder="Email" required>
+                        <i class="bx bx-envelope"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" id="loginPassword" placeholder="Password" required>
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                    <div id="loginError" class="error-message">Please use a @det.nsw.edu.au email</div>
+                    <div class="input-box">
+                        <input type="submit" class="submit" value="Sign In">
+                    </div>
+                </form>
+            </div>
 
-                <p>Don't have an account? <a href="#" id="register">Register</a></p>
-            </form>
+            <div class="register-container" id="register" style="display: none;">
+                <div class="top">
+                    <span>Already have an account? <a href="#" onclick="showLogin()">Sign In</a></span>
+                    <header>Register</header>
+                </div>
+                <form id="registerForm">
+                    <div class="input-box">
+                        <input type="text" class="input-field" id="regName" placeholder="Full Name" required>
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" class="input-field" id="regEmail" placeholder="Email" required>
+                        <i class="bx bx-envelope"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" id="regPassword" placeholder="Password" required>
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" id="regConfirmPassword" placeholder="Confirm Password" required>
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                    <div id="registerError" class="error-message">Please use a @det.nsw.edu.au email</div>
+                    <div class="input-box">
+                        <input type="submit" class="submit" value="Create Account">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>
-</html>
+    <script src="Login.js"></script>
