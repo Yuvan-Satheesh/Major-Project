@@ -1,411 +1,379 @@
-// Quiz Data for Each Module
-const modulesData = {
-    'school-culture': {
-        title: "School Culture",
-        description: "Test your knowledge of MFHS culture and values",
-        questions: [
-            {
-                question: "What is the mission of Macquarie Fields High School?",
-                options: [
-                    "To achieve the highest exam results in NSW",
-                    "To provide a supportive and inclusive learning environment",
-                    "To focus exclusively on academic achievement",
-                    "To be the largest school in the region"
-                ],
-                correct: "To provide a supportive and inclusive learning environment",
-                feedback: "Our mission focuses on creating an environment that supports all aspects of student development."
-            },
-            {
-                question: "What are the school's core values?",
-                options: [
-                    "Respect, Responsibility, Resilience, Excellence",
-                    "Achievement, Competition, Discipline, Results",
-                    "Knowledge, Skills, Attitude, Behavior",
-                    "Growth, Innovation, Collaboration, Success"
-                ],
-                correct: "Respect, Responsibility, Resilience, Excellence",
-                feedback: "These four values guide all our interactions and decision-making at MFHS."
-            },
-            {
-                question: "What is the school's approach to student diversity and inclusion?",
-                options: [
-                    "The school promotes equity and celebrates diversity",
-                    "The school has a uniform approach for all students",
-                    "The school focuses primarily on academic achievement",
-                    "Diversity is acknowledged but not actively promoted"
-                ],
-                correct: "The school promotes equity and celebrates diversity",
-                feedback: "We actively work to create an inclusive environment that values all students."
-            },
-            {
-                question: "How does the school ensure all students feel valued?",
-                options: [
-                    "Through inclusive policies and practices",
-                    "By focusing only on high-achieving students",
-                    "By minimizing differences between students",
-                    "Through competitive academic programs"
-                ],
-                correct: "Through inclusive policies and practices",
-                feedback: "Our policies are designed to recognize and accommodate diverse student needs."
-            },
-            {
-                question: "What does the school emphasize besides academic achievement?",
-                options: [
-                    "Personal growth and community engagement",
-                    "Sports performance",
-                    "Standardized test results",
-                    "Uniform compliance"
-                ],
-                correct: "Personal growth and community engagement",
-                feedback: "We believe education encompasses more than just academic results."
-            }
-        ]
-    },
-    'policies': {
-        title: "Policies & Procedures",
-        description: "Essential school policies every teacher must know",
-        questions: [
-            {
-                question: "What should you do if you need to report a student incident?",
-                options: [
-                    "Tell a colleague and let them handle it",
-                    "Report to the Head Teacher or Deputy Principal",
-                    "Wait to see if it happens again",
-                    "Send an email to the principal when you have time"
-                ],
-                correct: "Report to the Head Teacher or Deputy Principal",
-                feedback: "All incidents should be reported promptly to ensure proper documentation and follow-up."
-            },
-            {
-                question: "What is the school's policy on bullying?",
-                options: [
-                    "Zero-tolerance with clear reporting processes",
-                    "Teachers handle it as they see fit",
-                    "Only serious cases are reported",
-                    "Students are encouraged to work it out themselves"
-                ],
-                correct: "Zero-tolerance with clear reporting processes",
-                feedback: "We have a strict anti-bullying policy with defined reporting procedures."
-            },
-            {
-                question: "How should homework be assigned according to school policy?",
-                options: [
-                    "Purposeful and differentiated",
-                    "The same for all students in a class",
-                    "As much as possible to ensure learning",
-                    "Only for students who are falling behind"
-                ],
-                correct: "Purposeful and differentiated",
-                feedback: "Homework should be meaningful and tailored to student needs."
-            },
-            {
-                question: "What is the process for handling student absences?",
-                options: [
-                    "Parents must notify the school, unexplained absences are followed up",
-                    "Teachers should call parents after each absence",
-                    "Only absences longer than 3 days are followed up",
-                    "Absences are only recorded but not followed up"
-                ],
-                correct: "Parents must notify the school, unexplained absences are followed up",
-                feedback: "We have a systematic approach to monitoring and following up on student attendance."
-            },
-            {
-                question: "Which of these is NOT a key school policy?",
-                options: [
-                    "Behavior Management",
-                    "Child Protection",
-                    "Teacher Preference",
-                    "ICT Acceptable Use"
-                ],
-                correct: "Teacher Preference",
-                feedback: "While we value teacher input, 'Teacher Preference' is not an official school policy."
-            },
-            {
-                question: "What platform is used for recording student incidents?",
-                options: [
-                    "Google Classroom",
-                    "Sentral",
-                    "Microsoft Teams",
-                    "The school newsletter"
-                ],
-                correct: "Sentral",
-                feedback: "Sentral is our official student management system for recording incidents."
-            }
-        ]
-    },
-    'teaching': {
-        title: "Teaching & Learning",
-        description: "Our approach to curriculum and pedagogy",
-        questions: [
-            {
-                question: "Which curriculum frameworks are used at MFHS?",
-                options: [
-                    "NSW Education Standards Authority (NESA) syllabuses",
-                    "International Baccalaureate",
-                    "Cambridge International Curriculum",
-                    "National Curriculum Framework"
-                ],
-                correct: "NSW Education Standards Authority (NESA) syllabuses",
-                feedback: "We follow the official NSW curriculum frameworks for all subjects."
-            },
-            {
-                question: "How are assessments structured at MFHS?",
-                options: [
-                    "Regular formative and summative assessments with formal reports twice yearly",
-                    "Only end-of-term exams",
-                    "Weekly standardized tests",
-                    "Teacher discretion with no set schedule"
-                ],
-                correct: "Regular formative and summative assessments with formal reports twice yearly",
-                feedback: "We use a balanced assessment approach to monitor student progress."
-            },
-            {
-                question: "Which teaching strategies are encouraged at MFHS?",
-                options: [
-                    "Differentiated instruction, explicit teaching, collaborative learning",
-                    "Lecture-style teaching only",
-                    "Self-directed learning with minimal teacher input",
-                    "Competitive classroom environments"
-                ],
-                correct: "Differentiated instruction, explicit teaching, collaborative learning",
-                feedback: "These evidence-based strategies form the foundation of our teaching approach."
-            },
-            {
-                question: "How does the school support students with additional learning needs?",
-                options: [
-                    "Through Learning Support Teams (LST), IEPs, and collaboration with support staff",
-                    "By placing them in separate classes",
-                    "Through after-school tutoring only",
-                    "By recommending external specialists"
-                ],
-                correct: "Through Learning Support Teams (LST), IEPs, and collaboration with support staff",
-                feedback: "We have a comprehensive support system for students with diverse learning needs."
-            },
-            {
-                question: "What is the school's approach to technology integration?",
-                options: [
-                    "Purposeful integration aligned with learning outcomes",
-                    "Minimal technology use in classrooms",
-                    "Exclusive use of traditional teaching methods",
-                    "Technology use at teacher discretion"
-                ],
-                correct: "Purposeful integration aligned with learning outcomes",
-                feedback: "We use technology strategically to enhance learning experiences."
-            }
-        ]
-    }
-};
+let currentSection = 'overview';
+let completedSections = [];
+let completedModules = [];
+let currentQuestion = 0;
+let quizAnswers = {};
+let quizScore = null;
+let teacherName = '';
+let certificateGenerated = false;
 
-// DOM Elements
-const modulesSection = document.getElementById('modules-section');
-const quizContainer = document.getElementById('quiz-container');
-const resultsContainer = document.getElementById('results-container');
-const moduleTitle = document.getElementById('module-title');
-const moduleDescription = document.getElementById('module-description');
-const questionNumberElement = document.getElementById('question-number');
-const questionTextElement = document.getElementById('question-text');
-const optionsGrid = document.getElementById('options-grid');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-const scoreDisplay = document.getElementById('score-display');
-const totalQuestionsElement = document.getElementById('total-questions');
-const scorePercentage = document.getElementById('score-percentage');
-const resultFeedback = document.getElementById('result-feedback');
-const retakeBtn = document.getElementById('retake-btn');
-const backToModulesLinks = document.querySelectorAll('.back-to-modules');
+// ========== MODULES ==========
+const moduleSections = [
+  {
+    id: 'culture',
+    title: 'MFHS School Culture',
+    icon: '👥',
+    overview: 'MFHS promotes a respectful, inclusive, and high-performing learning environment.',
+    keyPoints: [
+      'Respect for all students and staff.',
+      'Support inclusive and equitable learning.',
+      'Be role models for professionalism.',
+      'Uphold the school’s core values.'
+    ],
+    scenario: 'A student says they feel excluded. How should you respond to support MFHS values?'
+  },
+  {
+    id: 'policies',
+    title: 'Key Policies at MFHS',
+    icon: '📄',
+    overview: 'Understanding and applying school-wide policy is critical for safety and compliance.',
+    keyPoints: [
+      'Follow child protection procedures.',
+      'Apply mobile phone rules during class.',
+      'Report absences properly.',
+      'Use DoE-approved software for school work.',
+      'Respond to emergencies using MFHS protocols.'
+    ],
+    scenario: 'A student is using their phone repeatedly. What policy applies?'
+  },
+  {
+    id: 'standards',
+    title: 'Professional Teaching Practice',
+    icon: '📚',
+    overview: 'Teachers must meet Department and school standards consistently.',
+    keyPoints: [
+      'Create inclusive, outcomes-based lessons.',
+      'Use evidence to inform assessment.',
+      'Give timely feedback.',
+      'Adapt teaching to suit students.',
+      'Collaborate with peers and reflect.'
+    ],
+    scenario: 'Your students range widely in ability. How do you design your lesson?'
+  },
+  {
+    id: 'ethics',
+    title: 'Workplace Ethics at MFHS',
+    icon: '🧑‍🏫',
+    overview: 'Our school expects staff to behave professionally and ethically at all times.',
+    keyPoints: [
+      'Be punctual and dressed appropriately.',
+      'Maintain confidentiality and professionalism.',
+      'Avoid personal social media during class.',
+      'Respect cultural and personal differences.',
+      'Communicate respectfully with everyone.'
+    ],
+    scenario: 'A colleague shares a student concern in the staffroom. How do you respond?'
+  }
+];
 
-// Quiz Variables
-let currentModule = '';
-let currentQuestionIndex = 0;
-let score = 0;
-let userAnswers = [];
-const completedModules = [];
+// ========== QUIZ ==========
+const quiz = [
+  {
+    question: 'What is the minimum pass mark for this induction quiz?',
+    options: ['70%', '75%', '80%', '90%'],
+    answer: 2
+  },
+  {
+    question: 'At MFHS, mobile phones should be:',
+    options: [
+      'Used for taking pictures in class',
+      'Kept silent and out of sight during class',
+      'Allowed if students ask nicely',
+      'Used to access social media'
+    ],
+    answer: 1
+  },
+  {
+    question: 'If a student is absent for 3 consecutive days with no explanation, you should:',
+    options: [
+      'Ask the student when they return',
+      'Ignore it',
+      'Report it to the year advisor or attendance team',
+      'Call the police'
+    ],
+    answer: 2
+  },
+  {
+    question: 'Confidential student information should be:',
+    options: [
+      'Shared with other students',
+      'Discussed in the staffroom',
+      'Only shared with relevant staff',
+      'Posted on teacher social media'
+    ],
+    answer: 2
+  },
+  {
+    question: 'Teachers at MFHS should plan lessons that:',
+    options: [
+      'Only suit fast learners',
+      'Use evidence-based practices and suit all learners',
+      'Don’t need outcomes',
+      'Avoid assessment'
+    ],
+    answer: 1
+  },
+  {
+    question: 'If a student reports being bullied, your first response should be to:',
+    options: [
+      'Tell their friends to sort it out',
+      'Immediately report it to the Head Teacher Wellbeing',
+      'Ignore it unless it repeats',
+      'Post a reminder on Google Classroom'
+    ],
+    answer: 1
+  },
+  {
+    question: 'During a fire drill, your role is to:',
+    options: [
+      'Finish marking before evacuating',
+      'Evacuate yourself only',
+      'Follow MFHS emergency protocols and ensure student safety',
+      'Wait for admin to tell you'
+    ],
+    answer: 2
+  },
+  {
+    question: 'Which statement aligns with MFHS teacher professionalism?',
+    options: [
+      'Use your phone in class when bored',
+      'Dress casually to bond with students',
+      'Arrive early, be prepared, and follow school routines',
+      'Ignore emails from parents'
+    ],
+    answer: 2
+  },
+  {
+    question: 'A student asks to use TikTok in your class to “take a break.” What do you do?',
+    options: [
+      'Let them quickly do it',
+      'Say no and remind them of school phone policy',
+      'Join them in the video',
+      'Ignore it'
+    ],
+    answer: 1
+  },
+  {
+    question: 'Why is it important to collaborate with colleagues at MFHS?',
+    options: [
+      'To socialise only',
+      'To gossip about students',
+      'To support learning and professional growth',
+      'It isn’t important'
+    ],
+    answer: 2
+  }
+];
+// ========== NAVIGATION ==========
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.nav-item').forEach(btn => {
+    btn.onclick = () => navigate(btn.dataset.section);
+  });
 
-// Initialize the application when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Set up event listeners
-    prevBtn.addEventListener('click', prevQuestion);
-    nextBtn.addEventListener('click', nextQuestion);
-    retakeBtn.addEventListener('click', retakeQuiz);
-    backToModulesLinks.forEach(link => {
-        link.addEventListener('click', returnToModules);
-    });
-    
-    // Initialize module status indicators
-    updateModuleStatus();
+  navigate(currentSection);
+  renderModules();
+  renderResources();
+  updateProgress();
 });
 
-// Open a module and start its quiz
-function openModule(moduleId) {
-    currentModule = moduleId;
-    currentQuestionIndex = 0;
-    score = 0;
-    userAnswers = [];
-    
-    // Hide modules section and show quiz container
-    modulesSection.style.display = 'none';
-    quizContainer.style.display = 'block';
-    resultsContainer.style.display = 'none';
-    
-    // Set module title and description
-    moduleTitle.textContent = modulesData[moduleId].title;
-    moduleDescription.textContent = modulesData[moduleId].description;
-    
-    // Display first question
-    displayQuestion();
+function navigate(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
+  document.querySelector(`[data-section="${id}"]`).classList.add('active');
+  currentSection = id;
+
+  if (id === 'quiz') loadQuiz();
+  if (id === 'certificate') renderCertificate();
 }
 
-// Display the current question
-function displayQuestion() {
-    const currentQuestion = modulesData[currentModule].questions[currentQuestionIndex];
-    
-    // Update question number
-    questionNumberElement.textContent = `Question ${currentQuestionIndex + 1}/${modulesData[currentModule].questions.length}`;
-    
-    // Set question text
-    questionTextElement.textContent = currentQuestion.question;
-    
-    // Clear previous options
-    optionsGrid.innerHTML = '';
-    
-    // Create and display options
-    currentQuestion.options.forEach((option, index) => {
-        const optionBtn = document.createElement('button');
-        optionBtn.className = 'option-btn';
-        optionBtn.textContent = option;
-        
-        // Check if this option was previously selected
-        if (userAnswers[currentQuestionIndex] === option) {
-            optionBtn.classList.add('selected');
-        }
-        
-        optionBtn.addEventListener('click', () => selectAnswer(option, currentQuestion.correct));
-        optionsGrid.appendChild(optionBtn);
-    });
-    
-    // Update navigation buttons
-    updateNavButtons();
+function completeSection(id) {
+  if (!completedSections.includes(id)) completedSections.push(id);
+  updateProgress();
+
+  const next = ['overview', 'module', 'quiz', 'resources', 'certificate'][completedSections.length];
+  if (next) navigate(next);
 }
 
-// Handle answer selection
-function selectAnswer(selectedOption, correctAnswer) {
-    // Store user answer
-    userAnswers[currentQuestionIndex] = selectedOption;
-    
-    // Highlight selected option
-    const optionButtons = document.querySelectorAll('.option-btn');
-    optionButtons.forEach(button => {
-        button.classList.remove('selected', 'correct', 'incorrect');
-        
-        if (button.textContent === selectedOption) {
-            button.classList.add('selected');
-        }
-        
-        if (button.textContent === correctAnswer) {
-            button.classList.add('correct');
-        } else if (button.textContent === selectedOption && selectedOption !== correctAnswer) {
-            button.classList.add('incorrect');
-        }
-    });
-    
-    // Enable next button
-    nextBtn.disabled = false;
+function updateProgress() {
+  const percent = Math.round((completedSections.length / 4) * 100);
+  document.getElementById('headerProgress').style.width = percent + '%';
+  document.getElementById('headerProgressText').textContent = `${percent}% Complete`;
 }
 
-// Update navigation buttons state
-function updateNavButtons() {
-    // Hide previous button on first question
-    prevBtn.style.display = currentQuestionIndex === 0 ? 'none' : 'block';
-    
-    // Update next button text on last question
-    if (currentQuestionIndex === modulesData[currentModule].questions.length - 1) {
-        nextBtn.textContent = 'Finish Quiz';
-    } else {
-        nextBtn.textContent = 'Next Question';
-    }
-    
-    // Disable next button if no answer selected
-    nextBtn.disabled = !userAnswers[currentQuestionIndex];
+// ========== MODULE RENDERING ==========
+function renderModules() {
+  const area = document.getElementById('moduleAccordion');
+  area.innerHTML = moduleSections.map(section => `
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion('${section.id}')">${section.icon} ${section.title}</button>
+      <div class="accordion-content" id="content-${section.id}">
+        <p>${section.overview}</p>
+        <ul>${section.keyPoints.map(p => `<li>${p}</li>`).join('')}</ul>
+        <p><strong>Scenario:</strong> ${section.scenario}</p>
+        <button class="btn btn-primary" onclick="markModuleComplete('${section.id}')" ${completedModules.includes(section.id) ? 'disabled' : ''}>
+          ${completedModules.includes(section.id) ? 'Completed' : 'Mark as Done'}
+        </button>
+      </div>
+    </div>
+  `).join('');
+  updateModuleProgress();
 }
 
-// Move to the next question
-function nextQuestion() {
-    // Check if this is the last question
-    if (currentQuestionIndex === modulesData[currentModule].questions.length - 1) {
-        finishQuiz();
-        return;
-    }
-    
-    // Move to next question
-    currentQuestionIndex++;
-    displayQuestion();
+function toggleAccordion(id) {
+  document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('active'));
+  document.getElementById(`content-${id}`).classList.add('active');
 }
 
-// Move to the previous question
-function prevQuestion() {
-    // Move to previous question
-    currentQuestionIndex--;
-    displayQuestion();
+function markModuleComplete(id) {
+  if (!completedModules.includes(id)) completedModules.push(id);
+  renderModules();
+  if (completedModules.length === moduleSections.length) {
+    document.getElementById('moduleComplete').classList.remove('hidden');
+  }
+  updateModuleProgress();
 }
 
-// Finish the quiz and show results
+function updateModuleProgress() {
+  const total = moduleSections.length;
+  const done = completedModules.length;
+  const percent = (done / total) * 100;
+  document.getElementById('moduleProgress').textContent = `${done}/${total}`;
+  document.getElementById('moduleProgressBar').style.width = `${percent}%`;
+}
+
+// ========== QUIZ ==========
+function loadQuiz() {
+  currentQuestion = 0;
+  quizAnswers = {};
+  showQuestion();
+}
+
+function showQuestion() {
+  const q = quiz[currentQuestion];
+  document.getElementById('quizProgress').textContent = `Question ${currentQuestion + 1} of ${quiz.length}`;
+  document.getElementById('quizProgressBar').style.width = `${((currentQuestion + 1) / quiz.length) * 100}%`;
+
+  const options = q.options.map((opt, i) => `
+    <label class="quiz-option">
+      <input type="radio" name="q" value="${i}" ${quizAnswers[currentQuestion] === i ? 'checked' : ''} onclick="selectAnswer(${i})">
+      ${opt}
+    </label>
+  `).join('');
+
+  document.getElementById('quizContent').innerHTML = `
+    <h3>${q.question}</h3>
+    <div>${options}</div>
+    <div class="quiz-actions">
+      <button class="btn btn-secondary" onclick="prevQ()" ${currentQuestion === 0 ? 'disabled' : ''}>Back</button>
+      <button class="btn btn-primary" onclick="nextQ()" ${quizAnswers[currentQuestion] == null ? 'disabled' : ''}>${currentQuestion === quiz.length - 1 ? 'Submit' : 'Next'}</button>
+    </div>
+  `;
+}
+
+function selectAnswer(i) {
+  quizAnswers[currentQuestion] = i;
+  showQuestion();
+}
+
+function nextQ() {
+  if (currentQuestion < quiz.length - 1) {
+    currentQuestion++;
+    showQuestion();
+  } else {
+    finishQuiz();
+  }
+}
+
+function prevQ() {
+  if (currentQuestion > 0) {
+    currentQuestion--;
+    showQuestion();
+  }
+}
+
 function finishQuiz() {
-    // Calculate score
-    score = 0;
-    modulesData[currentModule].questions.forEach((question, index) => {
-        if (userAnswers[index] === question.correct) {
-            score++;
-        }
-    });
-    
-    // Calculate percentage
-    const percentage = Math.round((score / modulesData[currentModule].questions.length) * 100);
-    
-    // Display results
-    quizContainer.style.display = 'none';
-    resultsContainer.style.display = 'block';
-    
-    scoreDisplay.textContent = score;
-    totalQuestionsElement.textContent = modulesData[currentModule].questions.length;
-    scorePercentage.textContent = `${percentage}%`;
-    
-    // Set feedback message
-    if (percentage === 100) {
-        resultFeedback.textContent = "Perfect! You've mastered this module.";
-        // Mark module as completed if 100%
-        if (!completedModules.includes(currentModule)) {
-            completedModules.push(currentModule);
-            updateModuleStatus();
-        }
-    } else if (percentage >= 80) {
-        resultFeedback.textContent = "Great job! You have a strong understanding of this material.";
-    } else if (percentage >= 60) {
-        resultFeedback.textContent = "Good effort. Consider reviewing the material before retaking.";
-    } else {
-        resultFeedback.textContent = "Keep practicing. Review the material and try again.";
-    }
+  let score = 0;
+  quiz.forEach((q, i) => {
+    if (quizAnswers[i] === q.answer) score++;
+  });
+  quizScore = Math.round((score / quiz.length) * 100);
+  const passed = quizScore >= 80;
+
+  document.getElementById('quizContent').innerHTML = `
+    <div class="quiz-score">${quizScore}%</div>
+    <p>${passed ? '✅ You passed the assessment!' : '❌ You did not meet the 80% requirement.'}</p>
+    <div class="quiz-actions">
+      <button class="btn ${passed ? 'btn-primary' : 'btn-secondary'}" onclick="${passed ? "completeSection('quiz')" : "loadQuiz()"}">
+        ${passed ? 'Continue' : 'Try Again'}
+      </button>
+    </div>
+  `;
+  if (passed) completeSection('quiz');
 }
 
-// Retake the current quiz
-function retakeQuiz() {
-    openModule(currentModule);
+// ========== RESOURCES ==========
+function renderResources() {
+  const grid = document.getElementById('resourcesGrid');
+  grid.innerHTML = `
+    <h3>MFHS Staff Handbook</h3>
+    <p><a href="https://example.com/mfhs-handbook.pdf" target="_blank">📄 Handbook – All policies and protocols (PDF, 2.3MB)</a></p>
+
+    <h3>School Contacts</h3>
+    <ul>
+      <li><strong>Principal:</strong> Karyn O'Brien</li>
+      <li><strong>Deputy Principals:</strong> Mrs H Costa (Yr 8 & 11), Mrs L Trieu (Yr 9 & 12), Mr J Perrett (Yr 7 & 10)</li>
+      <li><strong>School Counsellors:</strong> Mr P Navoev, Ms S Freeman</li>
+      <li><strong>Support Officer:</strong> Henry Yoo</li>
+      <li><strong>Careers Advisor:</strong> Mr A Lustica</li>
+      <li><strong>HT Wellbeing:</strong> Mrs K Metcalfe (Yr 8 & 11), Ms S Bell (Yr 9 & 12), Ms S Gibbs (Yr 7 & 10)</li>
+      <li><strong>Student Advisors:</strong> Mrs T Porter (Yr 7), Mrs E Strong (Yr 8), Mr B Newman (Yr 9), Mr V Kumar (Yr 10), Ms K Moore (Yr 11), Ms V Lai (Yr 12)</li>
+      <li><strong>Head Teachers:</strong> Admin - Mrs L Buxton, CAPA - Mrs H Davidson, English - Mrs N Stevens & Mrs Ingale, HSIE - Mr T Neale, Maths - Mr G Plowes, PE - Mrs N Boyles, Science - Mr B Matchett, Special Ed - Mrs P O'Sullivan, TAS - Mr R Singh, Literacy - Mrs J Hall, T&L - Mrs S Hegde, VET - Mrs G Gonzalez</li>
+      <li><strong>Business Manager:</strong> Mrs J Brooker</li>
+      <li><strong>Office Manager:</strong> Mrs L Samuels</li>
+      <li><strong>Teacher Librarian:</strong> Miss K Hannaford</li>
+    </ul>
+
+    <h3>NSW Policy Library</h3>
+    <p><a href="https://education.nsw.gov.au/policy-library" target="_blank">Visit Policy Library 🔗</a></p>
+  `;
 }
 
-// Return to the modules section
-function returnToModules(e) {
-    e.preventDefault();
-    modulesSection.style.display = 'block';
-    quizContainer.style.display = 'none';
-    resultsContainer.style.display = 'none';
+// ========== CERTIFICATE ==========
+function renderCertificate() {
+  const c = document.getElementById('certificateContent');
+  if (!quizScore || quizScore < 80) {
+    c.innerHTML = `
+      <h3>🔒 Certificate Locked</h3>
+      <p>You must pass the quiz and complete all sections.</p>
+    `;
+    return;
+  }
+
+  if (!certificateGenerated) {
+    c.innerHTML = `
+      <h3>🎓 Certificate of Completion</h3>
+      <form onsubmit="generateCertificate(event)">
+        <label for="teacherNameInput">Enter your name:</label><br/>
+        <input id="teacherNameInput" required placeholder="Your full name"/><br/><br/>
+        <button class="btn btn-primary">Generate</button>
+      </form>
+    `;
+  } else {
+    c.innerHTML = `
+      <div class="certificate-preview">
+        <h2>Certificate of Completion</h2>
+        <p>This certifies that <strong>${teacherName}</strong> has completed the MFHS Teacher Induction Course.</p>
+        <p>Score: ${quizScore}%</p>
+      </div>
+    `;
+  }
 }
 
-// Update module status indicators
-function updateModuleStatus() {
-    completedModules.forEach(moduleId => {
-        const statusElement = document.getElementById(`${moduleId}-status`);
-        if (statusElement) {
-            statusElement.classList.add('completed');
-            statusElement.innerHTML = '<i class="fas fa-check"></i>';
-        }
-    });
+function generateCertificate(e) {
+  e.preventDefault();
+  const input = document.getElementById('teacherNameInput');
+  teacherName = input.value.trim();
+  certificateGenerated = true;
+  renderCertificate();
 }
