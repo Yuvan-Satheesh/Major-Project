@@ -68,100 +68,145 @@ const moduleSections = [
 
 // ========== QUIZ ==========
 const quiz = [
+   {
+    question: 'What are the core values of Macquarie Fields High School?',
+    options: [
+      'Respect, Responsibility, Resilience',
+      'Loyalty, Sincerity, Generosity',
+      'Integrity, Excellence, Innovation',
+      'Learning, Leadership, Service'
+    ],
+    answer: 0
+  },
   {
-    question: 'What is the minimum pass mark for this induction quiz?',
-    options: ['70%', '75%', '80%', '90%'],
+    question: 'If a student is absent, what is the correct procedure for notifying the school?',
+    options: [
+      'No action is required',
+      'The student should inform their friends',
+      'Parents/carers must contact the school office',
+      'The student should notify the principal directly'
+    ],
     answer: 2
   },
   {
-    question: 'At MFHS, mobile phones should be:',
+    question: 'Where can staff find the school\'s policies on student behaviour and management?',
     options: [
-      'Used for taking pictures in class',
-      'Kept silent and out of sight during class',
-      'Allowed if students ask nicely',
-      'Used to access social media'
+      'In the staffroom noticeboard',
+      'On the school\'s official website under "Rules and policies"',
+      'By asking the head teacher',
+      'In the local newspaper'
     ],
     answer: 1
   },
   {
-    question: 'If a student is absent for 3 consecutive days with no explanation, you should:',
+    question: 'What is the school\'s stance on bullying?',
     options: [
-      'Ask the student when they return',
-      'Ignore it',
-      'Report it to the year advisor or attendance team',
-      'Call the police'
+      'It is tolerated if minor',
+      'It is addressed only when reported by parents',
+      'It is not addressed',
+      'It is not tolerated and is addressed through the school\'s Anti-bullying Plan'
     ],
-    answer: 2
+    answer: 3
   },
   {
-    question: 'Confidential student information should be:',
+    question: 'What is the procedure if a student fails to submit an assessment task on time without a valid reason?',
     options: [
-      'Shared with other students',
-      'Discussed in the staffroom',
-      'Only shared with relevant staff',
-      'Posted on teacher social media'
-    ],
-    answer: 2
-  },
-  {
-    question: 'Teachers at MFHS should plan lessons that:',
-    options: [
-      'Only suit fast learners',
-      'Use evidence-based practices and suit all learners',
-      'Don’t need outcomes',
-      'Avoid assessment'
+      'They are given an extension automatically',
+      'They receive a warning letter and may be awarded a zero',
+      'They are expelled',
+      'No action is taken'
     ],
     answer: 1
   },
   {
-    question: 'If a student reports being bullied, your first response should be to:',
+    question: 'Who is the current principal of Macquarie Fields High School?',
     options: [
-      'Tell their friends to sort it out',
-      'Immediately report it to the Head Teacher Wellbeing',
-      'Ignore it unless it repeats',
-      'Post a reminder on Google Classroom'
+      'Heather Costa',
+      'Justin Perrett',
+      'Karyn O\'Brien',
+      'Luisa Trieu'
+    ],
+    answer: 2
+  },
+  {
+    question: 'Who is the Head Teacher of the English department?',
+    options: [
+      'Natalie Stevens',
+      'Troy Neale',
+      'Geoff Plowes',
+      'Nicole Boyles'
+    ],
+    answer: 0
+  },
+  {
+    question: 'If you have a concern regarding a student\'s wellbeing in Year 11, whom should you contact?',
+    options: [
+      'HT Wellbeing for Years 8 & 11',
+      'HT Wellbeing for Years 9 & 12',
+      'The school counsellor',
+      'The student\'s friends'
+    ],
+    answer: 0
+  },
+  {
+    question: 'Who is responsible for the PDHPE department?',
+    options: [
+      'Bill Matchett',
+      'Nicole Boyles',
+      'Philippa O’Sullivan',
+      'Ramnik Singh'
     ],
     answer: 1
   },
   {
-    question: 'During a fire drill, your role is to:',
+    question: 'Which staff member should be contacted for career advice?',
     options: [
-      'Finish marking before evacuating',
-      'Evacuate yourself only',
-      'Follow MFHS emergency protocols and ensure student safety',
-      'Wait for admin to tell you'
+      'Antony Lustica',
+      'Julie Hall',
+      'Karen Metcalfe',
+      'Leah Buxton'
+    ],
+    answer: 0
+  },
+  {
+    question: 'You notice a Year 9 student frequently using their phone in class despite multiple reminders. What is the most appropriate first step according to MFHS policy?',
+    options: [
+      'Confiscate the phone and keep it in your desk',
+      'Inform the head teacher immediately',
+      'Apply the MFHS Mobile Phone Policy: give a warning, then send the student to the front office if repeated',
+      'Ignore the behaviour to avoid escalation'
     ],
     answer: 2
   },
   {
-    question: 'Which statement aligns with MFHS teacher professionalism?',
+    question: 'You’re supervising lunch duty and witness two students having a heated argument that escalates to pushing. What should you do?',
     options: [
-      'Use your phone in class when bored',
-      'Dress casually to bond with students',
-      'Arrive early, be prepared, and follow school routines',
-      'Ignore emails from parents'
+      'Immediately intervene and report the incident to the relevant Deputy Principal',
+      'Wait and observe to see if it resolves on its own',
+      'Call their parents',
+      'Ask another student to get help while you walk away'
+    ],
+    answer: 0
+  },
+  {
+    question: 'You receive an email from a parent concerned about a classroom incident. What should your response involve?',
+    options: [
+      'Forward it to your head teacher and wait',
+      'Ignore the email if it seems minor',
+      'Respond professionally and inform your head teacher',
+      'Discipline the student without consultation'
     ],
     answer: 2
   },
   {
-    question: 'A student asks to use TikTok in your class to “take a break.” What do you do?',
+    question: 'When is it appropriate to apply the MFHS Student Welfare Policy and involve the Year Adviser?',
     options: [
-      'Let them quickly do it',
-      'Say no and remind them of school phone policy',
-      'Join them in the video',
-      'Ignore it'
+      'Only for serious misconduct',
+      'When any behaviour affects learning or wellbeing',
+      'Only after parent complaints',
+      'When the student asks for it'
     ],
     answer: 1
-  },
-  {
-    question: 'Why is it important to collaborate with colleagues at MFHS?',
-    options: [
-      'To socialise only',
-      'To gossip about students',
-      'To support learning and professional growth',
-      'It isn’t important'
-    ],
-    answer: 2
   }
 ];
 // ========== NAVIGATION ==========
@@ -317,8 +362,7 @@ function renderResources() {
   const grid = document.getElementById('resourcesGrid');
   grid.innerHTML = `
     <h3>MFHS Staff Handbook</h3>
-    <p><a href="https://example.com/mfhs-handbook.pdf" target="_blank">📄 Handbook – All policies and protocols (PDF, 2.3MB)</a></p>
-
+    <p><a href="https://education.nsw.gov.au/policy-library" target="_blank">Visit Policy Library 🔗</a></p>
     <h3>School Contacts</h3>
     <ul>
       <li><strong>Principal:</strong> Karyn O'Brien</li>
@@ -334,12 +378,9 @@ function renderResources() {
       <li><strong>Teacher Librarian:</strong> Miss K Hannaford</li>
     </ul>
 
-    <h3>NSW Policy Library</h3>
-    <p><a href="https://education.nsw.gov.au/policy-library" target="_blank">Visit Policy Library 🔗</a></p>
   `;
 }
 
-// ========== CERTIFICATE ==========
 function renderCertificate() {
   const c = document.getElementById('certificateContent');
   if (!quizScore || quizScore < 80) {
